@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Domokos Pál Péter Általános Iskola – 1119 Budapest, Sopron út 50. Általános iskolai nevelés-oktatás alsó és felső tagozaton." />
+  <title>Domokos Pál Péter Általános Iskola</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#fooldal" class="logo">
+        <span class="logo-icon" aria-hidden="true">
+          <svg class="cimer-svg" viewBox="0 0 60 74" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+            <path d="M4 4h52v46l-26 18L4 50V4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <line x1="4" y1="28" x2="56" y2="28" stroke="currentColor" stroke-width="1.5"/>
+            <text x="30" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="700" fill="currentColor" stroke="none">DPP</text>
+            <path d="M20 50V39Q30 28 40 39V50" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <rect x="9" y="35" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.4"/>
+            <rect x="43" y="35" width="8" height="9" rx="1" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-name">Domokos Pál Péter</span>
+          <span class="logo-sub">Általános Iskola</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Főnavigáció">
+        <ul>
+          <li><a href="#fooldal">Főoldal</a></li>
+
+          <li class="has-dropdown">
+            <a href="#iskolarol">Iskolánkról <span class="nav-arrow" aria-hidden="true"></span></a>
+            <ul class="dropdown">
+              <li><a href="#iskolarol">Bemutatkozás</a></li>
+              <li><a href="#nevadankrol">Névadónkról</a></li>
+              <li><a href="#boldog-iskola">Boldog Iskola</a></li>
+              <li><a href="#erasmus-oko">Erasmus &amp; Öko-sarok</a></li>
+              <li><a href="#partnereink">Partnereink</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#programok">Programok <span class="nav-arrow" aria-hidden="true"></span></a>
+            <ul class="dropdown">
+              <li><a href="#programok">Tanórai programok</a></li>
+              <li><a href="#hatartalanul">Határtalanul!</a></li>
+              <li><a href="#eredmenyek">Eredményeink</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#beiskolazas">Beiskolázás</a></li>
+          <li><a href="#hirek">Hírek</a></li>
+          <li><a href="#dokumentumok">Dokumentumok</a></li>
+
+          <li class="has-dropdown">
+            <a href="#ugyintezas">Ügyintézés <span class="nav-arrow" aria-hidden="true"></span></a>
+            <ul class="dropdown">
+              <li><a href="#emenza">E-Menza</a></li>
+              <li><a href="#ekreta">E-Kréta</a></li>
+              <li><a href="#konyvtar">Könyvtár</a></li>
+              <li><a href="#alapitvany">Alapítvány</a></li>
+              <li><a href="#tanev-rendje">Tanév rendje</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#kapcsolat" class="nav-cta">Kapcsolat</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="fooldal">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-deco hd-pencil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></span>
+      <span class="hero-deco hd-book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+      <span class="hero-deco hd-ruler"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="8" rx="1"/><line x1="6" y1="12" x2="6" y2="16"/><line x1="10" y1="11" x2="10" y2="16"/><line x1="14" y1="12" x2="14" y2="16"/><line x1="18" y1="11" x2="18" y2="16"/></svg></span>
+      <span class="hero-deco hd-scissors"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></span>
+      <span class="hero-deco hd-calc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="7" y="5" width="10" height="4" rx="0.5"/><line x1="8" y1="13" x2="10" y2="13"/><line x1="9" y1="12" x2="9" y2="14"/><line x1="13" y1="12" x2="13" y2="14"/><line x1="12" y1="13" x2="14" y2="13"/><line x1="16" y1="13" x2="16" y2="13" stroke-width="3"/><line x1="8" y1="17" x2="10" y2="17"/><line x1="12" y1="17" x2="14" y2="17"/><line x1="16" y1="17" x2="16" y2="17" stroke-width="3"/></svg></span>
+      <span class="hero-deco hd-grad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+      <span class="hero-deco hd-clip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></span>
+      <span class="hero-deco hd-award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+      <span class="hero-deco hd-globe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+      <span class="hero-deco hd-backpack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 1 6 0v1H9V4z"/><path d="M5 7h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/><line x1="9" y1="13" x2="15" y2="13"/></svg></span>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Budapest XI. kerület · Újbuda</p>
+      <h1>Domokos Pál Péter<br /><span>Általános Iskola</span></h1>
+      <p class="hero-lead">
+        Tudást, értékeket és életre szóló alapokat adunk 1–8. osztályos tanulóinknak
+        Sopron út 50-es iskolánkban.
+      </p>
+      <div class="hero-actions">
+        <a href="#iskolarol" class="btn btn-primary">Ismerje meg iskolánkat</a>
+        <a href="#kapcsolat" class="btn btn-outline">Kapcsolat</a>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== QUICK INFO STRIP ===== -->
+  <section class="info-strip" aria-label="Gyors elérhetőségek">
+    <div class="container info-strip-grid">
+      <div class="info-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <div>
+          <strong>Cím</strong>
+          <span>1119 Budapest, Sopron út 50.</span>
+        </div>
+      </div>
+      <div class="info-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <div>
+          <strong>Telefon</strong>
+          <span><a href="tel:+3612041201">+36 1 204-12-01</a></span>
+        </div>
+      </div>
+      <div class="info-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <div>
+          <strong>E-mail</strong>
+          <span><a href="mailto:titkarsag@domokos.dbtk.hu">titkarsag@domokos.dbtk.hu</a></span>
+        </div>
+      </div>
+      <div class="info-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+        <div>
+          <strong>Munkaidő</strong>
+          <span>H–P: 7:30 – 17:00</span>
+        </div>
+      </div>
+      <div class="info-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zm-7-9h5v5h-5z"/></svg>
+        <div>
+          <strong>Tanév rendje</strong>
+          <span><a href="docs/DPP%20tan%C3%A9v%20rendje%202025-2026.%2009.03..pdf" target="_blank" rel="noopener">2025–2026 – letöltés</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="iskolarol">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Az iskoláról</span>
+        <h2>Bemutatkozás</h2>
+        <p>Intézményünk jogelődje 1911-ben nyitotta meg a kapuit a kelenföldiek gyermekei számára. Ma 24 tanteremben, egy tornateremben, tornaszobában, táncteremben és műhelyben folyik az oktató-nevelő munka.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V17h2v-4.82l1 .55V17c0 2.76 3.58 5 8 5s8-2.24 8-5v-4.27L23 9 12 3zm6 14c0 .71-1.21 1.75-3 2.44V16h-2v3.44C11.21 18.75 10 17.71 10 17v-2.27l2 1.09 2-1.09V17h2v-2.27l2-1.09V17z"/></svg>
+          </div>
+          <h3>Oktatás 1–8. osztályig</h3>
+          <p>Teljes körű általános iskolai nevelés-oktatást nyújtunk mind az alsó tagozaton (1–4. osztály), mind a felső tagozaton (5–8. osztály).</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/></svg>
+          </div>
+          <h3>Idegen nyelvi tagozat</h3>
+          <p>Emelt szintű angol és német nyelvoktatást kínálunk, felkészítve tanulóinkat a többnyelvű Európára.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <h3>Közösség és értékek</h3>
+          <p>Iskolánk névadója, Domokos Pál Péter szellemében a közösségi érzés, a kulturális örökség és az összetartozás értékeit ápoljuk.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+          </div>
+          <h3>Fenntartó</h3>
+          <p>Iskolánkat a <strong>Dél-Budai Tankerületi Központ</strong> tartja fenn. Igazgatónk: Kovácsné Tapolcsányi Júlia Valéria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NÉVADÓNKRÓL ===== -->
+  <section class="section section-alt" id="nevadankrol">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Névadónkról</span>
+        <h2>Domokos Pál Péter (1901–1992)</h2>
+        <p>Iskolánk névadója a moldvai csángó magyarság kiemelkedő kutatója, pedagógusa és kultúramentője volt.</p>
+      </div>
+
+      <div class="quote-block">
+        <blockquote>
+          „Boldog voltam, hogy megtaláltam ezt a mondatot… Hisz ez az ösztönzés tett képessé arra, amit csináltam, és ami sem mivel sem több, mint amit mindenki megtehet, akiben szív, szeretet és munkakészség, hajlandóság van."
+          <cite>– Domokos Pál Péter: <em>„Édes hazámnak akartam szolgálni"</em></cite>
+        </blockquote>
+      </div>
+
+      <div class="about-grid" style="margin-top:2.5rem">
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <h3>1901 – Csíksomlyón született</h3>
+          <p>Erdélyi kegyhelyen született; a csíksomlyói tanítóképzőt végezte. Egész életét a pedagógiának és a moldvai magyarság kultúrájának szentelte.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+          </div>
+          <h3>A csángók kutatója</h3>
+          <p>28 éves korától járta Moldvát, és húsz éven át gyűjtötte a csángó magyarok dalait, táncait és hagyományait – megmentve ezeket az utókornak.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          </div>
+          <h3>Pro Cultura Újbuda – 2020</h3>
+          <p>2020. január 22-én Domokos Pál Péter posztumusz <em>„Pro Cultura Újbuda"</em> kitüntetésben részesült kiemelkedő tudományos és pedagógiai munkásságáért.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V17h2v-4.82l1 .55V17c0 2.76 3.58 5 8 5s8-2.24 8-5v-4.27L23 9 12 3zm0 13.5c-2.33 0-4.31-.84-5.5-2.05V14l5.5 3 5.5-3v.45c-1.19 1.21-3.17 2.05-5.5 2.05z"/></svg>
+          </div>
+          <h3>1992 – Örökségünk</h3>
+          <p>1992-ben hunyt el. Iskolánk az ő nevét és szellemiségét – a közösségért, hazáért végzett önzetlen munkát – viszi tovább minden nap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOLDOG ISKOLA ===== -->
+  <section class="section" id="boldog-iskola">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Boldog Iskola</span>
+        <h2>Boldog Iskola Program</h2>
+        <p>A 2022/23-as tanévben iskolánk a <strong>Jobb Veled a Világ Alapítvány</strong> jóvoltából elnyerte a <em>Boldog Iskola</em> címet.</p>
+      </div>
+
+      <div class="two-panel">
+        <div class="two-panel-text">
+          <p>Egyes csoportokban havi egy alkalommal boldogságfokozó technikákat tanítunk. Ezeken az órákon olyan témákat járunk körül, melyek segítik gyermekeinket a hétköznapi problémákkal való megküzdésben, ugyanakkor fejlesztik önismeretüket és érzelmi intelligenciájukat.</p>
+          <div class="two-panel-actions">
+            <a href="docs/boldogovodaiskola2022_oklevel_1406.pdf" class="btn btn-primary" target="_blank" rel="noopener">Boldog Iskola oklevél</a>
+            <a href="docs/honlap_bemutato_szoveg.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Bemutatkozó</a>
+          </div>
+          <a href="docs/D%C3%A1n%20k%C3%BCld%C3%B6tts%C3%A9g%20l%C3%A1togat%C3%A1sa%202024.05.22..pdf" class="doc-row" style="margin-top:1rem" target="_blank" rel="noopener">Dán küldöttség látogatása, 2024</a>
+        </div>
+
+        <div class="two-panel-docs">
+          <h3>Havi programanyagok</h3>
+          <div class="docs-list">
+            <a href="docs/boldogsagora_munkaterv_DPP.pdf" class="doc-row" target="_blank" rel="noopener">Munkaterv</a>
+            <a href="docs/szeptember_honlap.pdf" class="doc-row" target="_blank" rel="noopener">Szeptemberi program</a>
+            <a href="docs/Okt%C3%B3beri%20program.pdf" class="doc-row" target="_blank" rel="noopener">Októberi program</a>
+            <a href="docs/Novemberi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Novemberi program</a>
+            <a href="docs/Decemberi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Decemberi program</a>
+            <a href="docs/Janu%C3%A1ri%20program.pdf" class="doc-row" target="_blank" rel="noopener">Januári program</a>
+            <a href="docs/Febru%C3%A1ri%20program.pdf" class="doc-row" target="_blank" rel="noopener">Februári program</a>
+            <a href="docs/M%C3%A1rciusi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Márciusi program</a>
+            <a href="docs/%C3%81prilisi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Áprilisi program</a>
+            <a href="docs/M%C3%A1jusi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Májusi program</a>
+            <a href="docs/J%C3%BAniusi%20program.pdf" class="doc-row" target="_blank" rel="noopener">Júniusi program</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ERASMUS + ÖKO-SAROK ===== -->
+  <section class="section section-alt" id="erasmus-oko">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Különleges programjaink</span>
+        <h2>Erasmus &amp; Öko-sarok</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <h3>Erasmus-program</h3>
+          <p>Iskolánk részt vesz az európai Erasmus-programban, amely lehetőséget ad pedagógusainknak és diákjainknak nemzetközi szakmai fejlődésre és tapasztalatcserére.</p>
+          <a href="docs/erasmus_dublin_szeminar.pdf" class="doc-row" style="margin-top:1rem" target="_blank" rel="noopener">Pályázatíró szeminárium Dublinban</a>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20c6 0 8-5 8-8 0 0 1.93 1.43 2 5-1 0-2 1-2 2h2c1-2 .5-3 0-4.78C18.5 12.46 18.5 10 17 8z"/></svg>
+          </div>
+          <h3>Öko-sarok</h3>
+          <p>Iskolánk 2015 óta ökoiskola keretein belül is működik. A munkaterv kialakítása során ügyelünk arra, hogy ne csak havi szinten próbáljunk megfelelni az elvárásoknak, hanem legyenek folyamatos tevékenységeink egész éven.</p>
+          <a href="docs/okoisk-okl.pdf" class="doc-row" style="margin-top:1rem" target="_blank" rel="noopener">Ökoiskola oklevél</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="section" id="programok">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Programok &amp; Lehetőségek</span>
+        <h2>Mit kínálunk?</h2>
+        <p>Iskolánkban gazdag tanórai és tanórán kívüli programkínálattal várjuk diákjainkat.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-item">
+          <span class="program-num">01</span>
+          <div>
+            <h3>Alsó tagozat (1–4. osztály)</h3>
+            <p>Játékos, élményalapú tanulás, az alapkészségek biztos megalapozása olvasásban, írásban és számolásban.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <span class="program-num">02</span>
+          <div>
+            <h3>Felső tagozat (5–8. osztály)</h3>
+            <p>Szaktárgyi oktatás felkészített pedagógusokkal, középiskolai felvételire való felkészítéssel.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <span class="program-num">03</span>
+          <div>
+            <h3>Idegen nyelv – Angol &amp; Német</h3>
+            <p>Emelt óraszámú nyelvoktatás, amely modern kommunikációs készségeket ad útravalóul.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <span class="program-num">04</span>
+          <div>
+            <h3>Tehetséggondozás</h3>
+            <p>Versenyfelkészítők, szakkörök és egyéni fejlesztési lehetőségek kiemelkedő képességű diákjaink számára. <a href="docs/DPP-Tehetsegpont.pdf" target="_blank" rel="noopener" style="color:var(--clr-primary-mid)">Tehetségpont minősítés</a></p>
+          </div>
+        </div>
+        <div class="program-item">
+          <span class="program-num">05</span>
+          <div>
+            <h3>Felzárkóztatás</h3>
+            <p>Személyre szabott fejlesztési program azoknak, akiknek extra segítségre van szükségük.</p>
+          </div>
+        </div>
+        <div class="program-item">
+          <span class="program-num">06</span>
+          <div>
+            <h3>Iskolai sportélet</h3>
+            <p>Sportkör, testnevelési foglalkozások és versenyeken való részvétel az egészséges életmód jegyében.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="szakkor-block">
+        <h3>Tanórán kívüli foglalkozások</h3>
+        <div class="docs-list">
+          <a href="docs/Als%C3%B3%20tagozatos%20szakk%C3%B6r%C3%B6k.pdf" class="doc-row" target="_blank" rel="noopener">Alsó tagozatos szakkörök – aktuális lista</a>
+          <a href="docs/Fels%C5%91%20tagozatos%20szakk%C3%B6r%C3%B6k.pdf" class="doc-row" target="_blank" rel="noopener">Felső tagozatos szakkörök – aktuális lista</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HATÁRTALANUL ===== -->
+  <section class="section section-alt" id="hatartalanul">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Határtalanul!</span>
+        <h2>Határtalanul! kirándulások</h2>
+        <p>Magyarország Kormányának támogatásával – a Bethlen Gábor Alapkezelő ZRT közreműködésével – évenként kirándulunk határon túli magyar közösségekhez.</p>
+      </div>
+
+      <div class="hatartalanul-layout">
+        <div class="hatartalanul-text">
+          <p>A program célja, hogy tanulóink személyesen tapasztalják meg a Kárpát-medencei magyarság sokszínűségét, erősítsék nemzeti identitásukat és kötődjenek a határon túli magyar közösségekhez.</p>
+          <p style="margin-top:.75rem"><strong>2026. május 5–8.</strong> – aktuális kirándulásunk</p>
+          <a href="docs/Hat%C3%A1rtalanul%202026%20honlapra.pdf" class="btn btn-primary" style="margin-top:1.25rem" target="_blank" rel="noopener">Határtalanul 2026 – részletek</a>
+        </div>
+
+        <div class="hatartalanul-years">
+          <h3>Korábbi programjaink</h3>
+          <div class="year-pills">
+            <a href="docs/hatartalanul_2017.pdf" class="year-pill" target="_blank" rel="noopener">2017</a>
+            <a href="docs/hatartalanul_2018.pdf" class="year-pill" target="_blank" rel="noopener">2018</a>
+            <a href="docs/hatartalanul_2019.pdf" class="year-pill" target="_blank" rel="noopener">2019</a>
+            <a href="docs/hatartalanul_2021.pdf" class="year-pill" target="_blank" rel="noopener">2020</a>
+            <a href="docs/nemz_ossz_napja.pdf" class="year-pill" target="_blank" rel="noopener">2021</a>
+            <a href="docs/Hat%C3%A1rtalanul%20kir%C3%A1ndul%C3%A1s%202024.%20b%C5%91v%C3%ADtettdocx.pdf" class="year-pill" target="_blank" rel="noopener">2024</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EREDMÉNYEINK ===== -->
+  <section class="section" id="eredmenyek">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Büszkék vagyunk</span>
+        <h2>Eredményeink</h2>
+        <p>Tanulóink évről évre kiemelkedő eredményeket érnek el tanulmányi versenyeken, sportban és egyéb területeken.</p>
+      </div>
+
+      <div class="eredm-grid">
+        <div class="eredm-card">
+          <h3>Tanulmányi eredmények</h3>
+          <div class="eredm-year-list">
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2023–2024 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2022–2023 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2021–2022 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2020–2021 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2019–2020 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2018–2019 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2017–2018 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2016–2017 <span>→</span></a>
+          </div>
+        </div>
+        <div class="eredm-card">
+          <h3>Sporteredmények</h3>
+          <div class="eredm-year-list">
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2023–2024 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2022–2023 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2021–2022 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2020–2021 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2019–2020 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2018–2019 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2017–2018 <span>→</span></a>
+            <a href="docs/eredmenyek_tanevenkent.pdf" target="_blank" rel="noopener">2016–2017 <span>→</span></a>
+          </div>
+        </div>
+        <div class="eredm-card">
+          <h3>Országos Kompetenciamérés</h3>
+          <div class="eredm-year-list">
+            <a href="docs/IntezmenyiOsszefoglalo_034990_OKM2021.pdf" target="_blank" rel="noopener">2021 <span>→</span></a>
+            <a href="docs/TelephelyiOsszefoglalo_034990_1_OKM2019.pdf" target="_blank" rel="noopener">2019 <span>→</span></a>
+            <a href="docs/IntezmenyiOsszefoglalo_034990_OKM2018.pdf" target="_blank" rel="noopener">2018 <span>→</span></a>
+            <a href="docs/IntezmenyiOsszefoglalo_034990_OKM2017.pdf" target="_blank" rel="noopener">2017 <span>→</span></a>
+            <a href="docs/IntezmenyiOsszefoglalo_034990_OKM2016.pdf" target="_blank" rel="noopener">2016 <span>→</span></a>
+            <a href="docs/IntezmenyiOsszefoglalo_034990_OKM2015.pdf" target="_blank" rel="noopener">2015 <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEISKOLÁZÁS ===== -->
+  <section class="section section-alt" id="beiskolazas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Beiskolázás</span>
+        <h2>Beiratkozás &amp; Felvételi</h2>
+        <p>Minden fontos információ és dokumentum az elsős beiratkozáshoz és a középfokú továbbtanuláshoz.</p>
+      </div>
+
+      <div class="enroll-grid">
+        <div class="enroll-card">
+          <h3>Elsős beiskolázás – 2025/2026</h3>
+          <div class="docs-list">
+            <a href="docs/Felh%C3%ADv%C3%A1s%20a%20tank%C3%B6teless%C3%A9%20v%C3%A1l%C3%B3%20gyerekek%20iskolai%20beirat%C3%A1s%C3%A1ra.pdf" class="doc-row" target="_blank" rel="noopener">Felhívás tankötelessé váló gyerekeknek</a>
+            <a href="docs/%C3%9Atmutat%C3%B3%20leend%C5%91%20els%C5%91s%20gyerekek%20beiratkoz%C3%A1s%C3%A1hoz.pdf" class="doc-row" target="_blank" rel="noopener">Útmutató leendő elsősök beiratkozásához</a>
+            <a href="docs/B%C3%81I_Sz%C3%BCl%C5%91i%20t%C3%A1j%C3%A9koztat%C3%B3_2026.pdf" class="doc-row" target="_blank" rel="noopener">Szülői tájékoztató a beiratkozáshoz</a>
+            <a href="docs/Els%C5%91s%20iskolai%20el%C5%91k%C3%A9sz%C3%ADt%C5%91%20foglalkoz%C3%A1sok.pdf" class="doc-row" target="_blank" rel="noopener">Iskolai előkészítő foglalkozások</a>
+            <a href="docs/K%C3%96RZETES%20gyermekek%20jelentkez%C3%A9si%20lapja.pdf" class="doc-row" target="_blank" rel="noopener">Körzetes gyerekek jelentkezési lapja</a>
+            <a href="docs/K%C3%96RZETEN%20K%C3%8DV%C3%9CLI%20gyermekek%20jelentkez%C3%A9si%20lapja.pdf" class="doc-row" target="_blank" rel="noopener">Körzeten kívüli gyerekek jelentkezési lapja</a>
+            <a href="docs/Iskol%C3%A1nk%20felv%C3%A9teli%20k%C3%B6rzete.pdf" class="doc-row" target="_blank" rel="noopener">Iskolánk felvételi körzete</a>
+            <a href="docs/XI.%20ker%C3%BCleti%20iskol%C3%A1k%20felv%C3%A9teli%20k%C3%B6rzete.pdf" class="doc-row" target="_blank" rel="noopener">XI. kerületi iskolák felvételi körzete</a>
+            <a href="docs/nyil_szul_fj.pdf" class="doc-row" target="_blank" rel="noopener">Nyilatkozat szülői felügyeletről</a>
+            <a href="docs/nyil_tart_h.pdf" class="doc-row" target="_blank" rel="noopener">Nyilatkozat tartózkodási helyről</a>
+          </div>
+        </div>
+
+        <div class="enroll-card">
+          <h3>Középfokú beiskolázás – 8. osztályosoknak</h3>
+          <p style="font-size:.9rem;color:var(--clr-text-muted);margin-bottom:1.25rem">Szülői értekezlet: 2025. november 17. (hétfő) 18:00</p>
+          <div class="docs-list">
+            <a href="docs/T%C3%A1j%C3%A9koztat%C3%B3%20a%202024-2025%20szeptember.docx" class="doc-row" target="_blank" rel="noopener">Tájékoztató</a>
+            <a href="docs/1._KIFIR_felveteli_lapok_alairasa_2025.pdf" class="doc-row" target="_blank" rel="noopener">Felvételi lapok aláírása</a>
+            <a href="docs/5._KIFIR_alt_isk_8_evfolyamrol_2025_2026.pdf" class="doc-row" target="_blank" rel="noopener">A 8. évfolyam a középfokú felvételi eljárásban</a>
+            <a href="docs/6._KIFIR_kozponti_irasbeli_vizsga_2025_2026.pdf" class="doc-row" target="_blank" rel="noopener">Központi írásbeli vizsga 2026</a>
+            <a href="docs/7._KIFIR_SNI_es_BTMN_tanulok_2025_2026.pdf" class="doc-row" target="_blank" rel="noopener">Különleges bánásmódot igénylő tanulók</a>
+            <a href="docs/kozepiskola-tipusok.jpg" class="doc-row" target="_blank" rel="noopener">Középiskolák típusai</a>
+            <a href="docs/KIFIR_kiadvany_teljes_2025_2026.pdf" class="doc-row" target="_blank" rel="noopener">A teljes kiadvány, 2025–2026</a>
+          </div>
+          <div style="margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--clr-border)">
+            <p style="font-size:.85rem;font-weight:600;color:var(--clr-text-muted);margin-bottom:.5rem">Hasznos linkek</p>
+            <a href="https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozepfoku_felveteli_eljaras_informacioi" class="doc-row" target="_blank" rel="noopener">Középfokú felvételi eljárás – oktatas.hu</a>
+            <a href="https://palyavalasztas.fpsz.hu/" class="doc-row" target="_blank" rel="noopener" style="margin-top:.4rem">Pályaválasztási tanácsadás</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="section" id="hirek">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Aktuális</span>
+        <h2>Hírek &amp; Események</h2>
+        <p>Kövesse nyomon iskolánk életét – aktuális hírek, rendezvények és közlemények.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card news-card--featured">
+          <div class="news-tag">Beiskolázás</div>
+          <h3>Beiratkozás 2025/2026-os tanévre</h3>
+          <p>Az első osztályos beiratkozás dokumentumai letölthetők a Beiskolázás menüpontból. Kérdéseivel forduljon iskolatitkárságunkhoz.</p>
+          <time datetime="2026-01-01" class="news-date">2026. január</time>
+        </article>
+        <article class="news-card">
+          <div class="news-tag">Program</div>
+          <h3>Határtalanul! 2026 – május 5–8.</h3>
+          <p>Idén tavasszal ismét határon túli kirándulást szervezünk. Részletek a Határtalanul! menüpontban.</p>
+          <time datetime="2026-05-05" class="news-date">2026. május</time>
+        </article>
+        <article class="news-card">
+          <div class="news-tag">Középfok</div>
+          <h3>Középfokú beiskolázás – 8. osztályosoknak</h3>
+          <p>A 2025–2026-os tanév középfokú felvételi eljárásának dokumentumai és határidői elérhetők a Beiskolázás szekcióban.</p>
+          <time datetime="2025-11-01" class="news-date">2025. november</time>
+        </article>
+      </div>
+
+      <div class="hirek-bottom">
+        <div class="galeria-card">
+          <h3>Ez történt – Archívum</h3>
+          <p>Korábbi rendezvényeink, eseményeink és híreink teljes gyűjteménye az iskola honlapján.</p>
+          <a href="docs/ez_tortent_archivum.pdf" class="doc-row" style="margin-top:1rem" target="_blank" rel="noopener">Összes esemény megtekintése</a>
+        </div>
+
+        <div class="galeria-card">
+          <h3>Galéria</h3>
+          <p>Az iskolánkkal kapcsolatos fényképek és videók a GDPR-szabályozásnak megfelelően folyamatosan kerülnek feltöltésre.</p>
+          <div class="docs-list" style="margin-top:1rem">
+            <a href="https://drive.google.com/drive/folders/1S7cuQPGE-rXKwsdFJKGZ1RUmbMLnPY5U?usp=sharing" class="doc-row" target="_blank" rel="noopener">Fotók – Google Drive album</a>
+            <span class="doc-row" style="opacity:.55;cursor:default">Videók – hamarosan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCUMENTS ===== -->
+  <section class="section section-alt" id="dokumentumok">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Letöltések</span>
+        <h2>Dokumentumok</h2>
+        <p>A dokumentumok bal kattintással új ablakban nyílnak meg, jobb gombbal letölthetők.</p>
+      </div>
+
+      <div class="docs-categories">
+
+        <div class="docs-category">
+          <h3>Alapdokumentumok</h3>
+          <div class="docs-cat-grid">
+            <a href="docs/alapito_okirat_SZAKMAI_alapdok.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Alapító Okirat – Szakmai Alapdokumentum</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/H%C3%A1zirend25.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Házirend</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/Pedag%C3%B3giai%20program25.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Pedagógiai Program</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/Szervezeti%20%C3%A9s%20M%C5%B1k%C3%B6d%C3%A9si%20Szab%C3%A1lyzat25.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Szervezeti és Működési Szabályzat</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/K%C3%B6zz%C3%A9t%C3%A9teli%20lista25.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Közzétételi lista</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/oklevel.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Tehetségpont minősítés</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3>Tantervek</h3>
+          <div class="docs-cat-grid">
+            <a href="docs/helyi_tanterv-20_also.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Helyi Tanterv 2020 – Alsó tagozat</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/helyi_tanterv-20_felso.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Helyi Tanterv 2020 – Felső tagozat</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/csr.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Csengetési rend</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/kisokos.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Digitális kisokos diákoknak</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3>Szülőknek – nyilatkozatok</h3>
+          <div class="docs-cat-grid">
+            <a href="docs/nyil_szul_fj.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Nyilatkozat szülői felügyeleti jogról</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/nyil_tart_h.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Nyilatkozat tartózkodási helyről</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/kikero.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Rendkívüli távolléti kérelem (szülői kikérő)</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/hit_erk_ny.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Hit- és erkölcstan nyilatkozat</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/tn-felm.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Testnevelés alóli felmentés</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/gdpr.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Szülői GDPR-nyilatkozat</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/dpp-gdpr.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Az iskola GDPR-szabályzata</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="docs-category">
+          <h3>Bizonyítvány pótlása</h3>
+          <div class="docs-cat-grid">
+            <a href="docs/A%20bizony%C3%ADtv%C3%A1ny%20m%C3%A1sodlat%20ki%C3%A1ll%C3%ADt%C3%A1s%C3%A1nak%20l%C3%A9p%C3%A9sei.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Bizonyítvány pótlásának menete</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+            <a href="docs/k%C3%A9relem%20bizony%C3%ADtv%C3%A1ny%20m%C3%A1sodlathoz.pdf" class="doc-card" target="_blank" rel="noopener">
+              <div class="doc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg></div>
+              <div class="doc-info"><strong>Kérelem bizonyítvány-másodlat kiállításához</strong><span>PDF</span></div>
+              <svg class="doc-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÜGYINTÉZÉS ===== -->
+  <section class="section" id="ugyintezas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Ügyintézés</span>
+        <h2>E-Menza · E-Kréta · Könyvtár · Alapítvány</h2>
+        <p>Gyors hozzáférés az online ügyintézési felületekhez és a legfontosabb tudnivalókhoz.</p>
+      </div>
+
+      <div class="ugyint-grid">
+
+        <!-- E-Menza -->
+        <div class="ugyint-card" id="emenza">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-8-15.03-8-15.03 0h15.03zM1.02 17h15v2h-15z"/></svg>
+            E-Menza
+          </h3>
+          <div class="docs-list">
+            <a href="docs/E-MENZA1.pdf" class="doc-row" target="_blank" rel="noopener">E-Menza tájékoztató 1.</a>
+            <a href="docs/E-MENZA2.pdf" class="doc-row" target="_blank" rel="noopener">E-Menza tájékoztató 2.</a>
+            <a href="docs/E-MENZA%20tudnival%C3%B3k.pdf" class="doc-row" target="_blank" rel="noopener">E-Menza tudnivalók</a>
+            <a href="https://e-menza.hu/" class="doc-row" target="_blank" rel="noopener">E-Menza ügyintézés – online</a>
+            <a href="docs/kerelem_etk.doc" class="doc-row" target="_blank" rel="noopener">Kérelem gyermekétkeztetés térítési díjához</a>
+            <a href="docs/3gyernyil.pdf" class="doc-row" target="_blank" rel="noopener">Háromgyermekes nyilatkozat</a>
+            <a href="docs/mogyoro-olajosmag-mentes.pdf" class="doc-row" target="_blank" rel="noopener">Nyilatkozat – mogyoró- és olajosmag-mentes</a>
+            <a href="docs/lisztmentes-nyilatkozat.pdf" class="doc-row" target="_blank" rel="noopener">Nyilatkozat – lisztmentes étkezés</a>
+            <a href="docs/sertesmentes-nyilatkozat.pdf" class="doc-row" target="_blank" rel="noopener">Nyilatkozat – sertésmentes étkezés</a>
+          </div>
+        </div>
+
+        <!-- E-Kréta -->
+        <div class="ugyint-card" id="ekreta">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
+            E-Kréta
+          </h3>
+          <div class="docs-list">
+            <a href="https://eugyintezes.e-kreta.hu/kezdolap" class="doc-row" target="_blank" rel="noopener">E-Kréta – szülőknek</a>
+            <a href="https://tanar.e-kreta.hu/" class="doc-row" target="_blank" rel="noopener">E-Kréta – pedagógusoknak</a>
+            <a href="https://kreta.e-kreta.hu/" class="doc-row" target="_blank" rel="noopener">E-Kréta – közvetlen belépés</a>
+          </div>
+          <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--clr-border)">
+            <p style="font-size:.85rem;font-weight:700;color:var(--clr-primary);margin-bottom:.6rem">Online beiratkozás</p>
+            <a href="https://eugyintezes.e-kreta.hu/kezdolap" class="doc-row" target="_blank" rel="noopener">E-beiratkozás – általános iskola</a>
+            <a href="https://eugyintezes.e-kreta.hu/kezdolap" class="doc-row" style="margin-top:.4rem" target="_blank" rel="noopener">E-beiratkozás – középiskola</a>
+          </div>
+        </div>
+
+        <!-- Könyvtár -->
+        <div class="ugyint-card" id="konyvtar">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            Iskolai Könyvtár
+          </h3>
+          <table class="hours-table">
+            <tr><td>Hétfő</td><td>11:30 – 16:00</td></tr>
+            <tr><td>Kedd</td><td>11:30 – 16:00</td></tr>
+            <tr><td>Szerda</td><td>11:30 – 16:00</td></tr>
+            <tr><td>Csütörtök</td><td>11:30 – 16:00</td></tr>
+            <tr><td>Péntek</td><td>7:30 – 11:30</td></tr>
+          </table>
+          <p style="margin-top:1rem;font-size:.85rem;color:var(--clr-text-muted)">
+            <strong>Könyvajánló:</strong> Jules Verne – <em>A rejtelmes sziget</em>
+          </p>
+        </div>
+
+        <!-- Alapítvány -->
+        <div class="ugyint-card" id="alapitvany">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            Alapítvány
+          </h3>
+          <p style="font-size:.92rem;font-weight:600;color:var(--clr-text);margin-bottom:.75rem">Szülők és Nevelők a Sopron Úti Iskoláért Közhasznú Alapítvány</p>
+          <div style="font-size:.85rem;color:var(--clr-text-muted);display:flex;flex-direction:column;gap:.3rem">
+            <span>Adószám: <strong>19702205-1-43</strong></span>
+            <span>Számlaszám: <strong>11711034-20443669</strong> (OTP Bank)</span>
+          </div>
+          <div class="docs-list" style="margin-top:1rem">
+            <a href="docs/ado2020.pdf" class="doc-row" target="_blank" rel="noopener">Könyvelői beszámoló</a>
+            <a href="docs/4.%20sz%C3%A1m%C3%BA%20mell%C3%A9klet%202025.11.11..docx" class="doc-row" target="_blank" rel="noopener">Adatvédelem – 4. sz. melléklet</a>
+          </div>
+          <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--clr-border);font-size:.85rem;color:var(--clr-text-muted)">
+            <strong style="color:var(--clr-primary);display:block;margin-bottom:.4rem">Pályázati sikerek</strong>
+            Nyári táboroztatás 2025: <strong>450 000 Ft</strong><br>
+            Civil szervezetek működése 2025: <strong>100 000 Ft</strong><br>
+            <span style="font-size:.8rem">(XI. ker. Újbuda Önkormányzata)</span>
+          </div>
+        </div>
+
+        <!-- A tanév rendje -->
+        <div class="ugyint-card" id="tanev-rendje">
+          <h3>
+            <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zm-7-9h5v5h-5z"/></svg>
+            A tanév rendje
+          </h3>
+          <p style="font-size:.9rem;color:var(--clr-text-muted);margin-bottom:1rem">A 2025–2026-os tanév rendje, szünetek és fontosabb időpontok.</p>
+          <div class="docs-list">
+            <a href="docs/DPP%20tan%C3%A9v%20rendje%202025-2026.%2009.03..pdf" class="doc-row" target="_blank" rel="noopener">A 2025–2026-os tanév rendje – PDF</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNEREINK ===== -->
+  <section class="section section-alt" id="partnereink">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Partnereink</span>
+        <h2>Együttműködő partnereink</h2>
+        <p>Köszönjük intézményeink, szervezeteink és alapítványaink támogatását!</p>
+      </div>
+      <div class="partner-grid">
+        <a href="https://www.oktatas.hu" class="partner-chip" target="_blank" rel="noopener">Oktatas.hu</a>
+        <a href="https://www.mupa.hu" class="partner-chip" target="_blank" rel="noopener">MÜPA</a>
+        <span class="partner-chip">Mozgolóda Óvoda</span>
+        <span class="partner-chip">Újbudai Nevelési Tanácsadó</span>
+        <span class="partner-chip">I. sz. Szakértői Bizottság</span>
+        <span class="partner-chip">Kanadai-Magyar Hokiklub</span>
+        <a href="docs/gyepuk_nepe_alapitvany.pdf" class="partner-chip" target="_blank" rel="noopener">Gyepűk Népe Alapítvány</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="kapcsolat">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Kapcsolat</span>
+        <h2>Keressen minket!</h2>
+        <p>Szívesen várjuk kérdéseit, észrevételeit személyesen, telefonon vagy e-mailben.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-block">
+            <h3>Elérhetőségek</h3>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <div>
+                  <strong>Cím</strong>
+                  <span>1119 Budapest, Sopron út 50.<br />XI. kerület (Újbuda)</span>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <div>
+                  <strong>Telefon / Fax</strong>
+                  <span><a href="tel:+3612041201">+36 1 204-12-01</a></span>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <div>
+                  <strong>E-mail (titkárság)</strong>
+                  <span><a href="mailto:titkarsag@domokos.dbtk.hu">titkarsag@domokos.dbtk.hu</a></span>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                <div>
+                  <strong>Nyitvatartás (titkárság)</strong>
+                  <span>Hétfő–Péntek: 7:30 – 17:00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-block">
+            <h3>Fenntartó</h3>
+            <p>Dél-Budai Tankerületi Központ</p>
+            <p style="font-size:.85rem;color:var(--clr-text-muted);margin-top:.25rem">1116 Budapest, Fehérvári út 126–128.</p>
+            <p class="contact-omid">OM azonosító: <strong>034990</strong></p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Tanáraink</h3>
+            <p style="font-size:.9rem;color:var(--clr-text-muted);margin-bottom:1rem">A Domokos Pál Péter Általános Iskola tantestülete a 2025–2026-os tanévben.</p>
+            <a href="docs/Honlapra%20tan%C3%A1rok.pdf" class="doc-row" target="_blank" rel="noopener">Tanáraink e-mail elérhetősége – PDF</a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            title="Domokos Pál Péter Általános Iskola térképe"
+            src="https://maps.google.com/maps?q=1119+Budapest,+Sopron+%C3%BAt+50&output=embed&z=16"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Vissza a tetejére" title="Vissza a tetejére">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Domokos Pál Péter Általános Iskola</p>
+        <p class="footer-addr">1119 Budapest, Sopron út 50.</p>
+        <p class="footer-addr">OM azonosító: 034990</p>
+        <p class="footer-addr footer-contact-line">Tel: <a href="tel:+3612069643">+36 1 206-9643</a></p>
+        <p class="footer-addr footer-contact-line"><a href="mailto:dpp@dppiskola.hu">dpp@dppiskola.hu</a></p>
+      </div>
+      <nav class="footer-nav" aria-label="Lábléc navigáció">
+        <div class="footer-col">
+          <p class="footer-col-title">Iskolánkról</p>
+          <a href="#fooldal">Főoldal</a>
+          <a href="#iskolarol">Iskolánkról</a>
+          <a href="#nevadankrol">Névadónkról</a>
+          <a href="#boldog-iskola">Boldog Iskola</a>
+          <a href="#erasmus-oko">Erasmus &amp; Öko</a>
+          <a href="#partnereink">Partnereink</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Programok</p>
+          <a href="#programok">Programok</a>
+          <a href="#hatartalanul">Határtalanul!</a>
+          <a href="#eredmenyek">Eredményeink</a>
+          <a href="#beiskolazas">Beiskolázás</a>
+          <a href="#hirek">Hírek</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Információk</p>
+          <a href="#dokumentumok">Dokumentumok</a>
+          <a href="#ugyintezas">Ügyintézés</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </div>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Domokos Pál Péter Általános Iskola. Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
