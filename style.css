@@ -1219,6 +1219,7 @@ a.partner-chip:hover {
   .two-panel { grid-template-columns: 1fr; gap: 2rem; }
   .two-panel-docs .docs-list { grid-template-columns: 1fr; }
   .szakkor-block .docs-list { grid-template-columns: 1fr; }
+  .hatartalanul-layout { grid-template-columns: 1fr; gap: 2rem; }
 
   .logo-sub { display: none; }
 
