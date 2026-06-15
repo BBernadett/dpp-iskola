@@ -33,11 +33,20 @@ hamburger.addEventListener('click', () => {
 
 // Close menu when a link is clicked
 nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (e) => {
+    if (!nav.classList.contains('open')) return;
+    const href = link.getAttribute('href');
     nav.classList.remove('open');
     hamburger.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
     hamburger.setAttribute('aria-label', 'Menü megnyitása');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      setTimeout(() => {
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
   });
 });
 
