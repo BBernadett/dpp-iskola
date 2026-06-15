@@ -35,6 +35,8 @@ hamburger.addEventListener('click', () => {
 nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', (e) => {
     if (!nav.classList.contains('open')) return;
+    // Dropdown triggers only open/close the submenu — don't close the whole nav
+    if (link.parentElement.classList.contains('has-dropdown')) return;
     const href = link.getAttribute('href');
     nav.classList.remove('open');
     hamburger.classList.remove('open');
